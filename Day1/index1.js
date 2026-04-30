@@ -1,7 +1,6 @@
 let a = 5;
 let b = 10;
 let str = "Hello, World!";
-
 // String operations
 console.log("String: ", str);
 console.log("Length of String: ",str.length);
