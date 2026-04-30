@@ -41,3 +41,24 @@ let obj = {
 }
 
 console.log("Object",obj)
+
+console.log("----------------------------")
+
+var l = 10;
+let v = 20;
+console.log("Outside of Scope");
+console.log(l);
+console.log(v)
+
+{
+    console.log("Inside scope");
+    var l = 5;
+    let v = 10;
+
+    console.log(l);
+    console.log(v);
+}
+
+console.log("Outside of Scope");
+console.log(l);
+console.log(v);
