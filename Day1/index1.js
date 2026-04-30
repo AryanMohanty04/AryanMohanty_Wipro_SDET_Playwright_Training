@@ -30,3 +30,15 @@ console.log("a === b: ",a===b);
 console.log("a != b:", a != b);
 console.log("a >= b:", a>=b);
 console.log("a <= b:", a<=b);
+
+
+console.log("---------------------------")
+
+let obj = {
+    name: "Aryan",
+    id: 1,
+    age: 23,
+    city: "Bhubaneswar"
+}
+
+console.log("Object",obj)
