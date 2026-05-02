@@ -33,3 +33,12 @@
 5. Type Conversion:
     - parseInt(): Converts, string -> integer.
     - parseFloat(): Converts, string -> float.
+6. Reduce Function:
+    - Converts an array into a single value (number, object, etc.)
+    - Takes a callback function + initial value
+    - ex: numbers.reduce((acc, curr) => acc + curr, 0);
+    -array.reduce((accumulator, currentValue) => {
+    // logic
+    return accumulator;
+    }, initialValue);
+    
