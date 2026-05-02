@@ -5,7 +5,6 @@ let a = 10;
 let b = 20;
 console.log("Before Swapping value of a:", a);
 console.log("Before Swapping value of b:", b);
-
 let temp = a;
 a = b;
 b = temp;
