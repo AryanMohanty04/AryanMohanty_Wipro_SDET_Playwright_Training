@@ -83,3 +83,78 @@ let result = array
     .map(x => x*2)
     .find(x => x > 30)
 console.log(result);
+console.log();
+
+// Random
+console.log(Math.random(0,1))
+
+//Math.floor() -> towards lowest value
+console.log(Math.floor(10.99));
+console.log(Math.floor(-1.222));
+
+//Math.ceil() -> towards highest value
+console.log(Math.ceil(4.1));
+console.log(Math.ceil(11.1));
+
+//Converting string to integer
+let str = "123";
+console.log(parseInt(str))
+
+//Converting a string into a decimal float
+let str1 = "123.31";
+let num = parseFloat(str1);
+
+//Array methods
+let arr8 = [1,2,3,4,5];
+console.log(arr8);
+
+//Pop
+console.log("Removing last element of the array "+arr8.pop());
+console.log(arr8);
+
+//Push
+console.log("Adding element at the last index of the array")
+arr8.push(100);
+console.log(arr8);
+
+//Unshift
+console.log("Adding element at the front of the array");
+arr8.unshift(110);
+console.log(arr8);
+
+//Shift()
+console.log("Removing from front of the array");
+arr8.shift();
+console.log(arr8);
+
+//Splice() -> Adding or removing element {we do modify array when we use this}
+
+let arr9 = [1,2,3,4,5,6,7,8,9,10];
+console.log("Performing Splice operation: ")
+arr9.splice(1,3);
+console.log(arr9);
+
+//Slice()
+let newArr = arr9.splice(1,2);
+console.log(newArr);
+
+//IndexOf
+let arr10 = [10,20,30,40,50];
+console.log(arr10.indexOf(30));
+
+
+let colors = ["red", "green", "blue"];
+
+console.log(colors.indexOf("yellow")); // Returns undefined
+console.log(colors.includes("yellow")); 
+console.log(colors.length); 
+console.log(colors[3]); 
+console.log(colors[colors.length - 1]); 
+colors.push("yellow"); 
+console.log(colors); 
+colors.pop(); 
+console.log(colors); 
+colors.unshift("purple"); 
+console.log(colors);
+colors.shift(); 
+console.log(colors); 
