@@ -158,3 +158,27 @@ colors.unshift("purple");
 console.log(colors);
 colors.shift(); 
 console.log(colors); 
+
+//Reduce method: is used to convert an array into a single
+// Reduce takes a callback function and 
+
+const fruitbasket = ['apple','apple','banana','cherry','banana','apple'];
+
+const tally = fruitbasket.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(tally);
+
+
+const numbers = [1,-1,2,3];
+let s = 0;
+for(let n of numbers)
+    s += n;
+console.log(s);
+
+const total = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+console.log(total);
