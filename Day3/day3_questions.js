@@ -67,7 +67,6 @@ const avg = scores.reduce((sum,score)=> sum + score, 0)/ scores.length;
 console.log(avg);
 
 //Q10>
-
 console.log(`\nQuestion 10 Answer:- `);
 const nested = [[1,2],[3,4],[5,6]];
 const flat_array= nested.reduce((actual, curr) => actual.concat(curr),[]);
