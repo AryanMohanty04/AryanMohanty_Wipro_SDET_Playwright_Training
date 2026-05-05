@@ -1,0 +1,14 @@
+// Asynchronous JS
+
+1. Promise Creation: 
+    - new Promise((resolve, reject) =>{})
+2. Async:
+    - TimerFunction (setTimeOut()) is used to delay execution.
+3. Resolving the Promise
+    - resolve("Data received")
+    - it moves promise to fulfilled state.
+4. then():
+    - handles successful result
+5. catch():
+    - handles errors (rejected state).
+
