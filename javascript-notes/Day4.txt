@@ -2,13 +2,57 @@
 
 1. Promise Creation: 
     - new Promise((resolve, reject) =>{})
+    
 2. Async:
     - TimerFunction (setTimeOut()) is used to delay execution.
+
 3. Resolving the Promise
     - resolve("Data received")
     - it moves promise to fulfilled state.
+
 4. then():
     - handles successful result
+
 5. catch():
     - handles errors (rejected state).
 
+6. promise:
+    new Promise((resolve, reject) => {
+    // async task
+    })
+    resolve - success
+    reject - error
+
+7. Promise States
+    Pending - initial state
+    Fulfilled - resolved successfully
+    Rejected - error occurred
+
+8. then(): promise.then(result => {
+        console.log(result);
+    })
+    - handles success result
+
+9. catch(): promise.catch((error)=>{
+        console.log(error);
+    })
+    - handles error
+
+10. setTimeOut(): Used to delay execution
+
+11. fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
+12. Some of the API:
+    PokeAPI - (https://pokeapi.co/api/v2/pokemon/pikachu)
+    Ghibili - (https://ghibliapi.vercel.app/films)
+    Joke - (https://official-joke-api.appspot.com/random_joke)
+    Advice - ("https://api.adviceslip.com/advice")
+    CatFacts - ("https://catfact.ninja/fact")
+    Countries - ("https://restcountries.com/v3.1/name/india")
+    Crypto - ("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
+    DogImageURL - ("https://dog.ceo/api/breeds/image/random")
+    FakePost -  ("https://jsonplaceholder.typicode.com/posts/1")
+    Geocoding - ("https://geocoding-api.open-meteo.com/v1/search?name=${city}")
