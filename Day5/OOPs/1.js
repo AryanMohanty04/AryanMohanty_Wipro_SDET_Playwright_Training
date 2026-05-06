@@ -8,6 +8,5 @@ class Animal{
 }
 
 let dog = new Animal("Dog");
-
 console.log(dog.sound());
 
