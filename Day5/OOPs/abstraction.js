@@ -24,3 +24,4 @@ class Payment{
 
 const p = new Payment();
 p.pay(500);
+p.pay(210);
