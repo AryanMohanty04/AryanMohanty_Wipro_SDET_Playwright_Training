@@ -3,13 +3,11 @@ class Animal{
         console.log("Animal makes a sound");
     }
 }
-
 class Dog extends Animal{
     speak(){
         console.log("Dog barks");
     }
 }
-
 class Cat extends Animal{
     speak(){
         console.log("Car Meows");
