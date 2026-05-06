@@ -8,7 +8,6 @@ class BankAccount{
     deposit(amount){
         if(amount>0) this.#balance += amount;
     }
-
     withdraw(amount){
         if(amount <= this.#balance){
             this.#balance -= amount;
