@@ -1,0 +1,73 @@
+setTimeout(): is used to execute function once after a specified delay.
+    ex: setTimeout(() => {
+console.log("Runs after 2 seconds");
+}, 2000);
+
+setInterval(): is used to execute a function repeatedly at fixed time intervals.
+    ex: etInterval(() => {
+console.log("Runs every 2 seconds");
+}, 2000);
+
+------------------------------------------------------
+OOPs - is a way of organizing code into objects and classes, which makes it more modular and easier to maintain.
+
+1. Inheritance: It allows one class to acquire properties and methods from another class. It uses the keyword `extend`.
+    ex: class Animal{       
+    }
+    class Dog extends Animal{
+    }
+
+2. Polymorphism: It allows methods with the same name to have different implementation. This is where a child class provides it owns implementation of a parent class method.
+    ex: class Animal{
+        constructor(name){
+            this.name = name;
+        }
+        sound(){
+            return `${this.name} makes a sound`;
+        }
+    }
+    class Dog extends Animal{
+        sound(){
+            return `dog barks...`
+        }
+    }
+
+3. Encapsulation: It refers to wrapping methods and data bundled inside a class restricting direct access to certain details. It helps protect data from unauthorized access and modification. It is achieved by using private(#) fields and methods.
+    ex: class Account{
+        #balance = 0;
+        deposit(amount){
+            this.#balance += amount;
+        }
+        getBalance(){
+            return this.#balance;
+        }
+    }
+
+4. Abstraction: It refers to hiding complex implementation details and exposing only the essential features of an object.
+    ex: class CoffeMachine {
+        #waterTemperature = 90;
+        #boilWater()
+        {
+        return `Boiling water to ${this.#waterTemperature} degrees.`;
+     }
+    #grindBeans() 
+    {
+       return "Grinding beans.";
+     }
+}
+
+5. Super Keyword: It is used to access properties and methods of a parent class. It is mostly used in constructors to call the parent constructor by using super() and to access methods we use super.method()
+    ex:- class VideoGame{
+        constructor(name){
+            this.name = name;
+        }
+        gameName(){
+            console.log(`${this.name} is a game`);
+        }
+    }
+    class Apex extends VideoGame{
+        super(name)
+        gameName() { 
+            super.gameName(); // calls parent method console.log(`${this.name} is a ${this.type} game`);
+         }
+    }
