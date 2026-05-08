@@ -60,3 +60,19 @@ Prototypal inheritance: This is way of inheritance where we do not copy properti
 
     const aryan = new Person("Aryan");
     aryan.sayHello();
+---------------------------------------
+
+Stack: It is a data structure that follows, the LIFO principle.
+    -push():  Add item
+    -pop(): Remove top item
+    -peek(): see top item
+    -size(): Number of items
+
+    ex:- 
+    const stack = []
+    stack.push("Tada");
+    stack.push("Ray");
+    stack.push("Aryan");
+
+    console.log(stack.pop())
+    console.log(stack[stack.length-1])
