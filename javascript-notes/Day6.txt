@@ -19,7 +19,7 @@ Questions:
         - Used ternary operator for tax percentage selection
         - Used Template Literals for payroll summary logging
         - Used setTimeout() to simulate delayed payroll processing
-
+---------------------------------------
 PROTOTYPES:
 - Prototype is an object another object inherits from.
 
@@ -61,7 +61,6 @@ Prototypal inheritance: This is way of inheritance where we do not copy properti
     const aryan = new Person("Aryan");
     aryan.sayHello();
 ---------------------------------------
-
 Stack: It is a data structure that follows, the LIFO principle.
     -push():  Add item
     -pop(): Remove top item
@@ -76,3 +75,4 @@ Stack: It is a data structure that follows, the LIFO principle.
 
     console.log(stack.pop())
     console.log(stack[stack.length-1])
+---------------------------------------
