@@ -19,3 +19,44 @@ Questions:
         - Used ternary operator for tax percentage selection
         - Used Template Literals for payroll summary logging
         - Used setTimeout() to simulate delayed payroll processing
+
+PROTOTYPES:
+- Prototype is an object another object inherits from.
+
+- __proto__ is used to point towards the parent object.
+
+- prototype (keyword): it is a property that exists on functions.
+
+- prototype_chaining: JS searches through the linked objects when property is missing. Mostly upwards like towards the parent obj.
+
+    ex: const human {
+        age: 10
+    }
+    const aryan = Object.create(human);
+    aryan.age = 15;
+    Output: will be 15
+    - aryan.__proto__.age will return us 10 (proto points to the parent object)
+- Prototypes are objects which JS does links to the object created, which gives access to various methods for that particular objects.
+
+Prototypal inheritance: This is way of inheritance where we do not copy properties from parent object rather child object is linked to parent object.
+ ex: const human(){
+    walk(){
+        console.log("Walking...");
+    }
+ };
+ const aryan = Object.create(human);
+ aryan.walk();
+
+ here walk() is not copied rather JS looks in its prototype scope.
+
+ __proto__: exists on Objects only, as it points to parent object.
+ prototype: exists on functions
+    ex: function Person(name){
+        this.name = name;
+    }
+    Person.prototype.sayHello = function(){
+        console.log("hello");
+    };
+
+    const aryan = new Person("Aryan");
+    aryan.sayHello();
