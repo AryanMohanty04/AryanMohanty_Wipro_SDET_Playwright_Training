@@ -1,6 +1,4 @@
 //Objects
-
-
 // Q1. Create an object for a student and display all properties dynamically.
 console.log("Question 1 Answer:");
 
