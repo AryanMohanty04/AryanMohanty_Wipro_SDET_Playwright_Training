@@ -79,35 +79,3 @@ console.log("Values:", objectValues);
 
 // Q5. Create a shopping cart object and calculate total bill amount.
 
-console.log("\nQuestion 5 Answer:");
-
-let shoppingCart = {
-    item1: {
-        productName: "Laptop",
-        price: 50000,
-        quantity: 1
-    },
-
-    item2: {
-        productName: "Mouse",
-        price: 1000,
-        quantity: 2
-    },
-
-    item3: {
-        productName: "Keyboard",
-        price: 2000,
-        quantity: 1
-    }
-};
-
-let totalBill = 0;
-
-for (let item in shoppingCart) {
-
-    totalBill +=
-        shoppingCart[item].price *
-        shoppingCart[item].quantity;
-}
-
-console.log("Total Bill Amount:", totalBill);
