@@ -2,7 +2,6 @@
 
 // Q1. Convert JSON string into object.
 console.log("Question 1 Answer:");
-
 let studentJsonString = '{"name":"Ray","age":21,"course":"JavaScript"}';
 
 let studentObject = JSON.parse(studentJsonString);
