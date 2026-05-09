@@ -1,3 +1,5 @@
+//Numbers & Math
+
 // Q1. Generate a random number between 1 and 100.
 console.log("Question 1 Answer:");
 
