@@ -11,9 +11,6 @@ for (let key in studentObject) {
     console.log(key + ":", studentObject[key]);
 }
 
-
-
-
 // Q2. Count number of keys in an object.
 
 console.log("\nQuestion 2 Answer:");
