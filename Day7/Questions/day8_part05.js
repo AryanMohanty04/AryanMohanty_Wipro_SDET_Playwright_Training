@@ -7,7 +7,6 @@ let studentObject = {
     course: "JavaScript",
     city: "Chennai"
 };
-
 for (let key in studentObject) {
     console.log(key + ":", studentObject[key]);
 }
