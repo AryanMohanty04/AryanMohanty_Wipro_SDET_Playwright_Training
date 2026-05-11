@@ -1,7 +1,6 @@
 //Objects
 // Q1. Create an object for a student and display all properties dynamically.
 console.log("Question 1 Answer:");
-
 let studentObject = {
     name: "Ray",
     age: 21,
