@@ -54,5 +54,3 @@ prices.splice(-1, 1);
 let numericPrices = prices.map(Number);
 let total = sum(numericPrices);
 console.log(`Total Price: $${total}`);
-
-
