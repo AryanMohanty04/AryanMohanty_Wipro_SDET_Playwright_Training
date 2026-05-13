@@ -2,27 +2,29 @@
 // Scenario: You want to wrap any asynchronous function with a standard error logger.
 // Task: Write a generic function safeExecute<T> that takes an async function as an argument. It should return a new function that, when called, executes the original function inside a try/catch block and returns null if it fails.
 
-
-function safeExecute<T>(asyncFunction: () => Promise<T>) {
-  return async function (): Promise<T | null> {
-    try {
-      const result = await asyncFunction();
-      return result;
-    } catch (error) {
-      console.error("Error:", error);
-
-      return null;
+function safeExecute<Args extends any[], T>(asyncFnc: (...args: Args) => Promise<T>) {
+    return async (...args: Args): Promise<T | null> => {
+        try {
+            return await asyncFnc(...args);
+        } catch (err) {
+            console.error(err);
+            return null;
+        }
     }
-  };
+}
+
+const info = async (id: number): Promise<string> => {
+    if(id === -1) throw new Error("Invalid ID");
+    return `Data for ID: ${id}`
 }
 
 
-async function fetchUser(): Promise<string> {
-  return "Ray";
+async function dryRun() {
+    const getData = safeExecute(info);
+    const res = await getData(10);
+    const res1 = await getData(0);
+    const res2 = await getData(-1);
+    console.log(res, res1, res2);
 }
 
-const safeFetchUser = safeExecute(fetchUser);
-
-safeFetchUser().then((data) => {
-  console.log(data);
-});
+dryRun();
