@@ -1,0 +1,23 @@
+Playwright is an open source testing framework. It is used for automating web browsers and performing end to end testing of web applications. Playwright supports modern browsers such as Chromium, Firefox and WebKit.
+
+Playwright Installation and Setup
+- npm init playwright@latest
+Running Playwright Tests
+- npx playwright test
+
+test('has title', async ({page})) => {}
+ - test() creates a test case
+
+ await page.goto('https://');
+- goto() opens the website
+
+Title Validation:
+await expect(page).toHaveTitle(/Playwright/)
+-> /playwright/ is a regular expression
+(webpage title contains "Playwright")
+
+Clicking Link
+await page.getByRole('link',{name: 'Get started'}).click();
+- finds a link element
+- whose visible text is "Get started"
+
