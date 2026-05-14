@@ -5,6 +5,7 @@ Playwright Installation and Setup
 Running Playwright Tests
 - npx playwright test
 
+ex:-
 test('has title', async ({page})) => {}
  - test() creates a test case
 
