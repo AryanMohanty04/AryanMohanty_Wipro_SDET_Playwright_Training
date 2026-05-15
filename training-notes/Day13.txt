@@ -46,3 +46,9 @@ COMMANDS:
 - npm install dotenv
 - npm install express
 - npm install path
+
+
+
+Day12 (14-05-2026): We learned the fundamentals of Playwright, including what Playwright is and how testing works using Expected and Actual values. We also discussed Boundary Value Analysis for testing ranges and validations. Additionally, we understood what drivers and web drivers are, how they interact with Chromium engines, and completed the installation and setup of Playwright.
+
+Day13 (15-05-2026): We created a simple Login Page using Express.js and tested it using Playwright. We implemented automated test cases for valid login, invalid login, and username/password length validations.
