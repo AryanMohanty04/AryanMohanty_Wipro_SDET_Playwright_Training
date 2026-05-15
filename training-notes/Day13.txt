@@ -1,0 +1,48 @@
+Playwright Testing
+------------------
+
+1) Created Playwright Project
+    - npm init playwright@latest
+
+2) Installed Required Packages
+    - npm install express dotenv
+    (Used for: Creating backend server, Managing environment variables)
+
+3) Built a Simple Login Form for Testing
+
+4) Created .env file 
+    PORT = 3000
+    - Store configuration separately
+
+5) ->
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+    app.use(express.static('public'));
+
+    Reads JSON data
+    Reads form data
+
+6) Created Routes
+    app.get('/login')
+    - Opens Login Packages
+
+     app.post('/loginwithcreds')
+    - Validates username and password
+    - Sends response based on credentials
+
+7) Started Express Server
+    - node index.js
+
+9) Tested Multiple Cases
+    - Valid Login
+    - Invalid Login
+    - Username Length Validation
+    - Password Length Validation
+
+
+
+COMMANDS:
+- npm install playwright
+- npm install dotenv
+- npm install express
+- npm install path
