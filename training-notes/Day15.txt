@@ -1,0 +1,27 @@
+Playwright Testing Annotations & Timeout
+----------------------------------------
+1) Test Annotation: Skip
+  test.skip()
+  - Skips the test
+  - Test will not execute
+2) Test Annotation: Fail
+  test.fail()
+  - Expected to fail
+  - If it fails → test passes
+  - If it passes unexpectedly → marked failed
+3) Test Annotation: Fixme
+  test.fixme()
+    - Used for broken/incomplete test cases
+    - Temporarily disables test
+4) Slow Annotation
+    test.slow()
+    - Increases test timeout
+    - Used for slow-loading pages/APIs
+5) Set Timeout
+    test.setTimeout(60000)
+      - Sets custom timeout
+      - Example above = 60 seconds
+
+npx playwright test --ui
+npx playwright test --debug
+npx playwright test --headless
